@@ -8,7 +8,8 @@ const Book = props => {
       <h2 className="bookTitle">{props.title}</h2>
       <h4 className="author">{props.author}</h4>
       <p className="bookSummary">{props.publishedDate}</p>
-      <a href={props.toLink}>Learn More</a>
+      <a href={props.toLink} target="_blank" rel="noopener noreferrer" className="learnMore">Learn More</a>
+      <button className="addBtn" onClick={props.addBookToVivlio}>Add to MyVivlio</button>
     </div>
   )
 }

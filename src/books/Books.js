@@ -14,7 +14,7 @@ class Books extends Component {
   }
   handleInput = e => {
     e.preventDefault()
-    console.log(`You searched for ${this.state.searchInput}`)
+    // console.log(`You searched for ${this.state.searchInput}`)
     this.setState({
       searchInput: e.target.value
     })
@@ -33,14 +33,16 @@ class Books extends Component {
       })
       .catch(err => console.log(err))
   }
-
+  addBookToVivlio = () => {
+    console.log()
+  }
   render() {
     return (
       <div>
         <Search
           handleInput={this.handleInput} handleSearch={this.handleSearch}
           searchInput={this.searchInput}/>
-        <BookList books={this.state.books}/>
+        <BookList books={this.state.books} addBookToVivlio={this.addBookToVivlio}/>
       </div>
     )
   }

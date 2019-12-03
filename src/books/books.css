@@ -1,4 +1,5 @@
-.bookDisplay, .bookCards {
+.bookDisplay,
+.bookCards {
   margin: 1em 5em;
   display: flex;
   flex-wrap: wrap;
@@ -20,16 +21,27 @@
   border-radius: 5px 5px 0 0;
 }
 
+.author {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.learnMore {
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
 .bookSummary {
   font-size: 15px;
   line-height: 12pt;
-  /* overflow: hidden; */
   padding: 0.5em;
   text-overflow: ellipsis;
 }
 
 @media (max-width: 1077px) {
-  .bookDisplay, .bookCards {
+
+  .bookDisplay,
+  .bookCards {
     justify-content: space-evenly;
   }
 }

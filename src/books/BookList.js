@@ -10,7 +10,7 @@ const BookList = props => {
           return <Book
                     coverArt={book.volumeInfo.imageLinks.thumbnail} title={book.volumeInfo.title}
                     author={book.volumeInfo.authors} publishedDate={book.volumeInfo.publishedDate}
-                    toLink={book.volumeInfo.infoLink} key={i}/>
+                    toLink={book.volumeInfo.infoLink} key={i} addBookToVivlio={props.addBookToVivlio}/>
         })
       }
     </div>
