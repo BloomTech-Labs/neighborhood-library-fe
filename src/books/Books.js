@@ -27,14 +27,19 @@ class Books extends Component {
       .get(`https://www.googleapis.com/books/v1/volumes?q=${this.state.searchInput}`)
       .then(data => {
         console.log(data)
-        this.setState({
-          books: [...data.data.items]
-        })
+        if(data.data === undefined || data.data.totalItems === 0) {
+          alert('No books found')
+          return
+        } else{
+            this.setState({
+              books: [...data.data.items]
+            })
+        }
       })
       .catch(err => console.log(err))
   }
   addBookToVivlio = () => {
-    console.log()
+    console.log("we'll see")
   }
   render() {
     return (

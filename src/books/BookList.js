@@ -8,7 +8,8 @@ const BookList = props => {
       {
         props.books.map((book, i) => {
           return <Book
-                    coverArt={book.volumeInfo.imageLinks.thumbnail} title={book.volumeInfo.title}
+                    coverArt={book.volumeInfo.imageLinks.thumbnail}
+                    title={book.volumeInfo.title}
                     author={book.volumeInfo.authors} publishedDate={book.volumeInfo.publishedDate}
                     toLink={book.volumeInfo.infoLink} key={i} addBookToVivlio={props.addBookToVivlio}/>
         })

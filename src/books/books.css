@@ -13,6 +13,10 @@
   margin: 2em;
   box-shadow: 5px 5px 15px rgba(101, 88, 245, 0.5);
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.5em;
+  align-items: center;
 }
 
 .coverArt {
@@ -31,11 +35,23 @@
   text-decoration: none;
 }
 
+.learnMore:visited {
+  color: blue;
+}
+
 .bookSummary {
   font-size: 15px;
   line-height: 12pt;
   padding: 0.5em;
   text-overflow: ellipsis;
+}
+.addBtn {
+  border-radius: 5px;
+  background: none;
+  border: 2px solid rgb(101, 88, 245);
+  width: 10em;
+  padding: 0.25em;
+  color: rgb(101, 88, 245);
 }
 
 @media (max-width: 1077px) {
