@@ -21,7 +21,7 @@ function App(props) {
             return (
                 <li><a href="/login">Login </a></li>
             )
-            
+
             }}
 
   return (
@@ -35,7 +35,7 @@ function App(props) {
           {props.loggedIn ? 'Logout': "Login"}
           </Link> */}
           <ul className="login-btn">{renderContent()}</ul>
-          
+
         </nav>
       </header>
       <Switch>
