@@ -15,6 +15,7 @@ import AboutPage from './pages/About';
 import ContactPage from './pages/Contact';
 import './scss/index.scss';
 import Axios from 'axios';
+import ConfirmEmail from './components/resetPassword/confirmEmail';
 
 require('dotenv').config();
 
@@ -106,6 +107,7 @@ class App extends React.Component {
           <Route path='/books' component={Books} />
           <Route path='/about' component={AboutPage} />
           <Route path='/contact' component={ContactPage} />
+          <Route path='/resetpassword' component={ConfirmEmail} />
           <PrivateRoute path='/dashboard' checkCookie={this.checkCookie} component={UserDashboard} />
         </Switch>
       </div>
