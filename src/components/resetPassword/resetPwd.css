@@ -4,11 +4,15 @@
     text-align: center;
     align-items: center;
 }
-.resetPasswordForm {
+.resetPasswordForm,
+.confirmCodeForm {
     display: flex;
     flex-direction: column;
 }
-input[name="email"] {
+input[name="email"],
+input[name="code"],
+input[name="newPassword"],
+input[name="confirmNewPassword"] {
     font-size: 5em;
     padding: 0.25em 0.5em;
     border-radius: 5px;
@@ -28,4 +32,10 @@ input[name="email"] {
 .resetBtn:active {
     transition: ease-in-out 0.2s;
     transform: translateY(5px);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
