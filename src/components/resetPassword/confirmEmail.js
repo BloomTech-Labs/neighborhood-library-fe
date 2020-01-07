@@ -1,27 +1,39 @@
 import React, { Component } from "react"
 import "./resetPwd.css"
 import nodemailer from "nodemailer"
+import { Redirect } from "react-router-dom";
 
 class ConfirmEmail extends Component {
   state = {
-    email: ""
+    email: "",
+    redirect: false
   }
+
   handleEmailChange = e => {
+    e.preventDefault()
     this.setState({
-      email: e.target.value
+      [e.target.name]: e.target.value
     })
   }
+
+  redirectHandler() {
+    this.setState({
+      redirect: true
+    })
+  }
+
   randomCodeGen = () => {
     let a = Math.floor(Math.random() * 1000) + 100
     let b = Math.floor(Math.random() * 1000) + 100
     return `${a}${b}`
   }
+
   resetFormSubmit = e => {
     let randonNum = this.randomCodeGen()
     nodemailer.createTestAccount((err, account) => {
       const htmlEmail = `
     <h2>Dear Freddy, use this code to verify your password change</h2>
-    <h3>${randonNum}</h3> //maybe use random??
+    <h3>${randonNum}</h3>
     <span>If you didn't request this, click here</span>
   `
 
@@ -33,7 +45,6 @@ class ConfirmEmail extends Component {
         password: "kbtj984NFbnUVGsjrf" // maybe pull in something from the env
       }
     })
-
     let mailOptions = {
       from: "carlo.s16@hotmail.com",
       to: "nora.satterfield7@ethereal.email",
@@ -46,6 +57,8 @@ class ConfirmEmail extends Component {
       else console.log(info)
     })
     })
+
+    if(this.state.redirect) return <Redirect to='/confirmcode' />
   }
 
   render() {
@@ -61,7 +74,7 @@ class ConfirmEmail extends Component {
             autoFocus
             required
           ></input>
-          <button className="resetBtn">Reset password</button>
+          <button className="resetBtn" onClick={this.redirectHandler}>Reset password</button>
         </form>
       </div>
     )
