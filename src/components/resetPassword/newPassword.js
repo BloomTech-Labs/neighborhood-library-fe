@@ -6,11 +6,11 @@ class NewPassword extends Component {
         newPassword: '',
         confirmNewPassword: ''
     }
-    handlePwdChange = e => {
+    handlePwdChange = name => e => {
         this.setState({
-            [e.target.name]: e.target.value
+            [name]: e.target.value
         })
-        console.log(`${e.target.name}: ${e.target.value}`)
+        console.log(`${name}: ${e.target.value}`)
     }
     confirmNewPassword = e => {
         console.log('j')

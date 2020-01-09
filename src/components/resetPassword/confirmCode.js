@@ -5,9 +5,9 @@ class ConfirmCode extends Component {
     state = {
         code: ''
     }
-    handleCodeChange = e => {
+    handleCodeChange = name => e => {
         this.setState({
-            code: e.target.value
+            [name]: e.target.value
         })
     }
     codeConfirmForm = e => {
