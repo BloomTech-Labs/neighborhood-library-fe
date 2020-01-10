@@ -39,6 +39,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-family: 'Raleway', sans-serif;
 
   @media (max-width: $phone) {
     flex-direction: column;

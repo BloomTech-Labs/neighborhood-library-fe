@@ -114,7 +114,7 @@ class BookList extends React.Component {
         <div className="bookCards">
           {
             this.props.books.length === 0 ?
-              <p>Search for a book</p>
+              <p>Search for a Vivlio</p>
             :
             this.props.books.map((book, i) => {
               return <Book
