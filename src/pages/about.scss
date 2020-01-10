@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 .card {
   background: #fff;
@@ -9,11 +9,13 @@
   p {
   color: #555f77;
   text-align: justify;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
   }
 }
 
 .card-title {
-  font-family: 'Open Sans';
+  font-family: fantasy;
   font-weight: 100;
   color: #555f77;
 }
@@ -27,7 +29,7 @@
     .text-bold {
       font-weight: 700;
       a {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         color: #555f77;
       }
     }
