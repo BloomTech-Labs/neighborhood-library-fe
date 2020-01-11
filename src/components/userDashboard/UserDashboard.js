@@ -78,6 +78,7 @@ class UserDashboard extends React.Component {
           {
             this.state.activeTab === 'collection' ? (<>
               <h2>My Collection</h2>
+              <p>(Limited to 5 books)</p>
               <p>All the books you are lending out are here. Once a user selects to borrow your book, a chat option will appear. Talk about the plot, your favorites books, or other meetups in the area.</p>
               <hr />
               <BooksList
@@ -91,6 +92,7 @@ class UserDashboard extends React.Component {
           {
             this.state.activeTab === 'wishlist' ? (<>
               <h2>My Wishlist</h2>
+              <p>(Limited to 5 books)</p>
               <p>All the books you want to read and explore are here. See what lenders are available for each book. Learn more about each by clicking the 'Learn More' button.</p>
               <hr />
               <BooksList
