@@ -13,8 +13,8 @@ header {
 	margin-bottom: 30px;
 
 	@media (max-width: $phone) {
+		margin-bottom: 20px;
 		text-align: center;
-		border: 1px solid red;
 		position: relative;
 		z-index: 98;
 	}

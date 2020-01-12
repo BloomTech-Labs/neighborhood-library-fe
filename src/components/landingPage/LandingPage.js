@@ -20,23 +20,27 @@ export const LandingPage = () => {
 				</div>
 			</div>
 			<footer className='landing-footer'>
-				<div className='icon-group'>
-					<FontAwesomeIcon className='icon left' icon={faBookOpen} />
+				<div className='footer-group'>
+					<div className='icon-group book'>
+						<FontAwesomeIcon className='icon book' icon={faBookOpen} />
+					</div>
+					<div className='landing-text'>
+						<p>
+							Share your own collection <br />
+							or borrow from others
+						</p>
+					</div>
 				</div>
-				<div className='footer-text'>
-					<p>
-						Share your own collection <br />
-						or borrow from others
-					</p>
-				</div>
-				<div className='icon-group right'>
-					<FontAwesomeIcon className='icon right' icon={faUserFriends} />
-				</div>
-				<div className='footer-text'>
-					<p>
-						Join a vibrant community of book <br />
-						enthuisists in your local area
-					</p>
+				<div className='footer-group'>
+					<div className='icon-group friends'>
+						<FontAwesomeIcon className='icon friends' icon={faUserFriends} />
+					</div>
+					<div className='landing-text'>
+						<p className='text-right'>
+							Join a vibrant community of book <br />
+							enthuisists in your local area
+						</p>
+					</div>
 				</div>
 			</footer>
 		</div>
