@@ -1,40 +1,62 @@
+$small-phone: 360px;
+$phone: 500px;
+$tablet: 800px;
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-.card {
-  background: #fff;
-  padding: 3rem 12rem;
-  line-height: 1.5;
-  border-radius: 1.5%;
+.page-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 95%;
+	padding: 2% 4%;
+	margin: 2% 1%;
+}
 
-  p {
-   color: #555f77;
-   text-align: justify;
-  }
+.card {
+	background: #fff;
+	padding: 3rem 12rem;
+	line-height: 1.5;
+	border-radius: 1.5%;
+
+	p {
+		color: #555f77;
+		text-align: justify;
+	}
+	@media (max-width: $tablet) {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 35rem;
+		padding: 1% 5%;
+		margin: 5% 0;
+	}
 }
 
 .card-title {
-  font-family: 'Open Sans';
-  font-weight: 100;
-  color: #555f77;
+	font-family: 'Open Sans';
+	font-weight: 100;
+	color: #555f77;
 }
 
 .team-cont {
-  div {
-    .profile-avi {
-      width: 75%;
-      margin-bottom: 1rem;
-    }
-    .text-bold {
-      font-weight: 700;
-      a {
-        font-size: 1.8rem;
-        color: #555f77;
-      }
-      .about-role {
-        font-weight: 200;
-        text-transform: uppercase;
-        font-size: 1.4rem;
-      }
-    }
-  }
+	div {
+		.profile-avi {
+			width: 75%;
+			margin-bottom: 1rem;
+		}
+		.text-bold {
+			font-weight: 700;
+			a {
+				font-size: 1.8rem;
+				color: #555f77;
+			}
+			.about-role {
+				font-weight: 200;
+				text-transform: uppercase;
+				font-size: 1.4rem;
+			}
+		}
+	}
 }

@@ -16,7 +16,7 @@ import UserDashboard from './components/userDashboard/UserDashboard';
 import AboutPage from './pages/About';
 import ContactPage from './pages/Contact';
 import ChatPage from './pages/Chat';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import PrivateRoute from './middleware/PrivateRoute';
 
 require('dotenv').config();
@@ -127,7 +127,7 @@ class App extends React.Component {
 						component={UserDashboard}
 					/>
 				</Switch>
-				<Footer />
+				{/* <Footer /> */}
 			</div>
 		);
 	}
