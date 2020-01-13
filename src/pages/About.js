@@ -66,7 +66,7 @@ const About = () => {
         </p>
       </section>
       <section className='card'>
-        <h2 className="card-title">Team</h2>
+        <h1 className="card-title">Team</h1>
         <hr />
         <div className="team-cont">
           {
