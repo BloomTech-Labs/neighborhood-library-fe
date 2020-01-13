@@ -15,22 +15,28 @@ header {
 
 	@media (max-width: $phone) {
 		text-align: center;
+		display: flex;
+		flex-direction: column;
 		position: relative;
 		z-index: 98;
+		background: linear-gradient(#c7c6c3b9, #584e4e0e);
+		background-size: cover;
+		background-position: center;
+		align-items: center;
 	}
 
 	.logo-cont {
 		position: relative;
 		margin: 0;
 		text-align: left;
-
-		@media (max-width: $phone) {
-			display: none;
-		}
 	}
 
 	.logo {
 		width: 70px;
+
+		@media (max-width: $phone) {
+			width: 50px;
+		}
 	}
 }
 
@@ -117,9 +123,9 @@ header {
 				font-size: 1.8rem;
 				color: #fff;
 				font-weight: 600;
-				text-shadow: -0.6px 0.4px #555, 0.4px 0.2px #555, 0.4px 0 #555,
-					0.5px -1px #555;
-				letter-spacing: 0.1rem;
+				text-shadow: -0.2px 1.5px #555, 0.4px 0.4px #555, -0.5px 0.5px #555,
+					-0.5px 1.2px #555;
+				letter-spacing: 0.15rem;
 			}
 		}
 	}
