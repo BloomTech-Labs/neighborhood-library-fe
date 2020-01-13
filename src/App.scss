@@ -85,6 +85,10 @@ header {
 			outline: none;
 			box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
 		}
+
+		@media (max-width: $phone) {
+			font-weight: 600;
+		}
 	}
 
 	a {
@@ -107,9 +111,20 @@ header {
 		}
 
 		@media (max-width: $phone) {
-			color: #fff;
+			&:not(:last-child) {
+				font-size: 1.8rem;
+				color: #fff;
+				font-weight: 600;
+				text-shadow: -0.6px 0.4px #555, 0.4px 0.2px #555, 0.4px 0 #555,
+					0.5px -1px #555;
+				letter-spacing: 0.1rem;
+			}
 		}
 	}
+}
+
+.dashboard {
+	border: 1px solid red;
 }
 
 /* Pop up Modals */

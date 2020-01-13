@@ -4,6 +4,7 @@
 	flex-wrap: wrap;
 	width: auto;
 	justify-content: space-evenly;
+	padding: 3rem 3rem;
 }
 
 .bookCard {
